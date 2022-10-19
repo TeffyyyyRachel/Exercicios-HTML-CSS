@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio com vídeos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        p#oro{
+            display: none;
+        }
+        p#muzan{
+            display: none;
+        }
+        div{
+            display: inline-block;
+        }
+        div#oro:hover > p#oro{
+            display: block;
+            color: #DB1D86;
+        }
+        div#muzan:hover > p#muzan{
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Abaixo, vídeos para assistir!</h1>
+        
+        <div id="oro">
+            <a href="index2.html"><img src="midia/Captura de tela de 2022-09-15 15-30-38.png" alt="m4rkim orochimaru" height="150" id="oro"></a>
+            <p id="oro">video oro</p>
+        </div>
+        
+        <div id="muzan">
+            <a href="index3.html"><img src="midia/Captura de tela de 2022-09-15 15-30-42.png" alt="m4rkim muzan" height="150" id="muzan"></a>
+            <p id="muzan">video muzan</p>
+        </div>
+    </main>
+</body>
+</html>
