@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype'); 
+}
+
+body{
+    background-color: rgb(152, 243, 190);
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: green;
+    color: white;
+    padding: 20px;
+    padding-bottom: 5px;
+    box-shadow: 0px 2px 5px black;
+}
+
+header > section > h1 {
+    margin: 0px;
+    font-family: 'Oswald';
+    font-size: 60px;
+}
+
+header > section.titulo > h1,p {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.11);
+}
+
+header > nav > a {
+    color: white;
+    margin-right: 10px;
+}
+
+header > section {
+    text-align: center;
+    vertical-align: auto;
+}
+
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    text-align: justify;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+}
+
+main > section#texto > h1, h2{
+    font-family: 'Android';
+    color: darkgreen;
+}
+
+main > section#texto > h2 {
+    font-size: 20px;
+    background-color: rgba(0, 128, 0, 0.479);
+}
+
+main > section#texto > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > section#texto > picture > source#fotop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > section#video{
+    background-color: darkgreen;
+    text-align: center;
+    height: 400px;
+}
+
+main > section#listas > section.titulo {
+    background-color: darkgreen;
+    color: white;
+    width: 790px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding: 5px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main > section#listas > section.titulo > h1 {
+    margin: 10px auto 0px auto;
+}
+
+main > section#listas > section.bloco {
+    background-color: rgb(175, 236, 175);
+    padding: 25px;
+    margin-top: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+footer{
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 5px 0px 0px 0px;
+}

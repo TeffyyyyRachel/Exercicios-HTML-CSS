@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+
+    <style>
+        *{ /* A estrelinha é usada para uma configuração global dos elementos */
+            height: 100%;
+        }
+        body{ /*É necessário utilizar o background-image para criar o linear-gradient. O background-attachment é para que o gradient se mantenha na tela mesmo que a pessoa role a tela*/
+            background-image: linear-gradient(0deg, #B7F0AD, #D2FF96, #EDFF7A, #E8D33F, #D17B0F);
+            background-attachment: fixed;
+        }
+        p{
+            height: 10%;
+        }
+        h1{
+            height: 10%;
+            color: #003C1C;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formas de colorir utilizando o <em>styles</em></h1>
+    
+    <!--Representação por nome da cor-->
+    <p style="color: blue;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur dicta tempore esse facere, quos velit quia neque sed aliquid asperiores officia excepturi eveniet! Similique magni debitis accusantium minima nulla!</p>
+
+    <!--Representação de valores hexadecimais. Os primeiros 00 são a quantidade de vermelho, os 00 do meio são a quantidade de verde, e os últimos ff são a quantidade de azul-->
+    <p style="color: #0000ff;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur dicta tempore esse facere, quos velit quia neque sed aliquid asperiores officia excepturi eveniet! Similique magni debitis accusantium minima nulla!</p>
+
+    <!--Representação por parâmetro RGB, que escala de 0 a 250-->
+    <p style="color: rgb(0, 0, 250);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur dicta tempore esse facere, quos velit quia neque sed aliquid asperiores officia excepturi eveniet! Similique magni debitis accusantium minima nulla!</p>
+
+    <!--Representação por hue, saturation e lightness-->
+    <p style="color: hsl(240, 100%, 50%);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur dicta tempore esse facere, quos velit quia neque sed aliquid asperiores officia excepturi eveniet! Similique magni debitis accusantium minima nulla!</p>
+
+</body>
+</html>

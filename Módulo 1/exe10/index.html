@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <!--Anexar vídeos diretamente no site vai consumir muita banda, o que gera muito para a pessoa que paga pela hospedagem do site.-->
+    <h1>Trabalhando com vídeos hospedados localmente</h1>
+    <p>Abaixo, a forma mais simples de colocar um vídeo em um site:</p>
+    <video src="media/pexels-yan-5478927.mp4" controls width="500"></video>
+    <img src="media/ezgif-4-cc6a00de2a.webp" alt="Cachorrinho" width="500"> <!--WEBP só funciona na tag img-->
+
+    <p>Neste outro caso, há uma forma mais complexa e que torna elegível o vídeo a depender de por onde a pessoa está assistindo:</p>
+    <video width="500" controls>
+        <source src="media/pexels-yan-5478927.mp4" type="video/mp4">
+        <source src="media/ezgif-4-cc6a00de2a.webp" type="img/webp">
+        <p>Seu computador não tem compatibilidade para reproduzir este vídeo. :(</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/_qJIz6ZgGs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Vá em um vídeo, clique em COMPARTILHAR, depois INCORPORAR e copie o código HTML do vídeo-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SlgHy8QeoDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

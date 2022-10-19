@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.escondido {
+  background-color: yellow;
+  color: black;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}  
+span.toque:hover + div.escondido {
+  visibility: visible;
+  opacity: 1;
+}
+
+h1 {
+  background-color: yellow;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+div.toque:hover + h1 {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<span class="toque">Hover over me!</span>
+<div class="escondido"><h1>I will show on hover</h1></div>
+<h1>a</h1>
+<div class="toque"><span>Hover over me!</span></div>
+<h1>I will show on hover</h1>
+
+</body>
+</html>

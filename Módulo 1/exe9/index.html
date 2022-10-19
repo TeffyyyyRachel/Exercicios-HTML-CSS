@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="shortcut icon" href="youtube-54-menor.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com imagens dinâmicas</h1>
+    <p>Abra este site em dispositivos diferentes, ou diminua o tamanho do navegador.</p>
+
+    <picture>  <!--Para usar a tag source, é necessário envelopar ela em uma tag picture primeiro-->
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png"> <!--O source de max-width é utilizado para ditar qual imagem de qual tamanho o site irá mostrar, fazendo a interface se adaptar a telas menores e maiores de maneira organizada. Em uma tela de até 750px de LARGURA, a imagem pequena será exibida. A ORDEM IMPORTA-->
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png"> <!--Em uma tela maior do que 750 e que chegue a até 1050px, a imagem média será mostrada-->
+        <img src="imagens/grande.png" alt="imagem grande"> <!--Em telas maiores do que 1050px, a imagem grande será mostrada-->
+
+    </picture>
+
+    <h1>Trabalhando com áudios</h1>
+    <p>Abaixo, há um exemplo de execução de áudio em um site.</p>
+    <audio src="midia/farores-courage-the-legend-of-zelda-skyward-sword.mp3" controls autoplay></audio>
+    <p>JOGO DA MINHA VIDA, JOGÃO DA PORRA</p> <!--Às vezes, apenas a tag audio não funciona, então é melhor utilizar outro método-->
+    
+    <audio controls> <!--O parâmetro controls permitirá ao usuário pausar a música, pular para um trecho desejado, diminuir o volume e alterar a velocidade de reprodução-->
+        <source src="midia/Ruthless - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/Ruthless - NEFFEX.ogg" type="audio/ogg">
+        <source src="midia/Ruthless - NEFFEX.wav" type="audio/wav">
+        <p>Infelizmente, não foi possível reproduzir o áudio. :(</p>
+    </audio><!--Tirando o scr da tag de audio, o parâmetro source virá entre as tags como uma nova tag. É bom colocar diferentes tipos de áudio para que, se um tipo não funcionar, o site tentará carregar o próximo até um funcionar ou não e mostrando a mensagem de erro. ARQUIVO WAV É PESADO, NÃO RECOMENDADO-->
+</body>
+</html>

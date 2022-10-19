@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body{
+    background-image: linear-gradient(to right, #CCF5AC, #808A9F);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #5a68866b; /*Quanto anda na horizontal, quanto anda na vertical, quanto espalha e qual a cor, respectivamente*/
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 1px #6148852f;
+    color: #3D2B56;
+}
+
+h2{
+    color: #614885;
+}
+
+p{
+    text-align: justify;
+    color: #5a6886;
+}

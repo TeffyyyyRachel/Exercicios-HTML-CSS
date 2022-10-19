@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="youtube-54-menor.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="5"> <!--type é usado para ditar a formatação da minha lista, se quero com letras, algarísmos arábicos ou romanos, por exemplo, e start é para ditar a partir de onde quero que comece a contar-->
+        <li>Acordar</li>
+        <li>Arrumar a cama</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <h2>Listas <em>não</em> ordenadas</h2>
+    <strong>Lista de compras</strong>
+    <ul type="square"> <!--As opções de type são apenas circle, disc e square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Batata</li>
+    </ul>
+    <h2>Listas aninhadas</h2>
+    <h3>Top 3 2022 das minhas histórias preferidas</h3>
+    <!--MACETE: para editar mais de uma lista ao mesmo tempo, segura-se ALT e clica-se em outras linhas para criar vários cursores em paralelo-->
+    <ol type="A">
+        <li>Animes</li>
+        <ol>   
+            <li type="a">Monster</li>
+            <li type="a">Demon Slayer</li>
+            <li type="a">Naruto</li>
+        </ol>
+        <li>Mangás</li>
+            <ol>
+                <li>Ore Monogatari</li>
+                <li>HunterxHunter</li>
+                <li>Bakuman</li>
+            </ol>
+        <li>Filmes</li>
+            <ol>
+                <li>Spirit-Corcél Indomável</li>
+                <li>HTTYD</li>
+                <li>Kunf Fu Panda</li> 
+            </ol>
+    </ol>
+    <h2>Lista de definição</h2> <!--Funciona como um dicionário. O tema ou título é dado por dt e a explicação é dada por dd. Na busca de um usuário por uma definição, o Google dá prioridade para sites que usam listas de definição do html-->
+
+    <!--MACETE: o comando ol>li*n (com n sendo um valor inteiro) gera uma lista ordenada com tantos itens de lista já prontos quanto for o valor de n-->
+
+    <!--MACETE 2: com o cursor em uma tag, apertando f2 é possível mudar a tag de abertura e fechamento ao mesmo tempo-->
+    <dl>
+        <dt>Céu</dt>
+        <ol>
+            <li>
+                <dd>Espaço onde se localizam e se movem os astros.</dd>
+            <li>
+                <dd>Parte desse espaço, visível pelo homem e limitado pelo horizonte; firmamento, abóbada celeste.</dd>
+        </ol>
+    </dl>
+</body>
+</html>

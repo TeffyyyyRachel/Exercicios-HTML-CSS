@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+
+    <style>
+        div > p{
+            display: none;
+            transition-duration: 1s;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: red;
+            color: white;
+            width: 200px;
+            text-align: center;
+        }
+
+        div>p:hover{
+            background-color: green;
+        }
+
+        img#oro{
+            width: 30%;
+            display: none;
+            transition-duration: 1s;
+        }
+        p#video:hover + img#oro{
+            display: block;
+        }
+
+        img {
+            width: 300px;
+        }
+        body > p.oculto{
+            background-color: red;
+            display: none;
+        }
+        a#muzan:hover + p.muzan {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com o <em>hover</em></h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="texto">
+        TEXTO
+        <p><em>texto escondido</em></p>
+    </div>
+    <p id="video">MOSTRAR VIDEO</p>
+    <img src="../desafio 3.4/desafio3/midia/maxresdefault.jpg" alt="oro" id="oro"> <br>
+
+    <a href="#" id="muzan"><img src="../desafio 3.4/desafio3/midia/maxresdefault (1).jpg" alt="muzan"></a>
+    <p class="oculto">TEXTO OCULTO</p>
+</body>
+</html>

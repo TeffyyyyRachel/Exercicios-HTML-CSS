@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a{
+            text-decoration: none; /* nesse caso, tira sublinhação */
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        a:active{ /* Quando o link é clicado */
+            color: gray;
+        }
+        a::before{ /*Ele adiciona um elemento ANTES de todo o conteúdo que pertencer à tag 'a' */
+            content: '-> ';
+        }
+        a::after{ /*Ele adiciona um elemento DEPOIS de todo o conteúdo que pertencer à tag 'a' */
+            content: ' [link]';
+            color: rgba(128, 128, 128, 0.623);
+        }
+    </style>
+</head>
+<body>
+    <h1>Canais que eu gosto!</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/livesalanzoka/" target="_blank">Alanzoka</a></li>
+        <li><a href="https://www.youtube.com/channel/UCIDD2QVXZM5m5kqRcMJSmJA" target="_blank">Casal Perdidinho</a></li>
+        <li><a href="https://www.youtube.com/c/M4rkim" target="_blank">M4rkim</a></li>
+    </ul>
+</body>
+</html>
