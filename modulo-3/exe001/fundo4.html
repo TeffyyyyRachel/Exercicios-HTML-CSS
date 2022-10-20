@@ -9,7 +9,7 @@
     <style>
         body{
             height: 100vh;
-            background-image: url('midia/wallpaper003.jpg');
+            /*background-image: url('midia/wallpaper003.jpg');
             background-repeat: no-repeat;
             background-position: top center;
             background-color: black;
@@ -18,8 +18,14 @@
             valor fixo em px ou %: valores que impedirão a imagem de ser redimensionada;
             contain: que cobre a tela inteira sem cortar a imagem ou redimensioná-la;
             cover: ocupa a tela inteira com a imagem e impede a tudo custo o fundo de ser visto mesmo cortando as bordas da imagem.
+            /*background-attachment: fixed;*/
+
+            /*
+            Shorthand-Background: 
+            color > image > position > repeat > [size] (não funciona, tem que ser colocado por fora) > attachment
             */
-            background-attachment: fixed;
+            background: black url(midia/wallpaper003.jpg) top center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
