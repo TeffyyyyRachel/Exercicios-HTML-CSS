@@ -3,20 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0%;
+    padding: 0%;
 }
 h1 {
-    font-family: 'Passion One', sans-serif;
-    font-size: 130px;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 80px;
 }
 #titulo {
     text-align: center;
     background-color: black;
     color: white;
-    font-variant: small-caps;
-    padding: 50px 0px 50px 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10vh 0px 10vh 0px;
+    font-family: var(--fonte1);
 }
 
 a {
@@ -34,14 +41,14 @@ a:hover{
 }
 
 main{
-    font-family: 'Sriracha', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte3);
 }
-main article {
+main section {
     font-size: 47px;
-    padding: 100px 0px 100px 50px;
+    padding: 10vh 0px 10vh 50px;
 }
 main p {
-    margin: 10px 0px 80px 0px;
+    margin: 10vh 0px 10vh 0px;
 }
 main #a2 {
     background-image: url('imagens/background001.jpg');
@@ -70,7 +77,7 @@ main #a4 p {
 footer{
     background-color: black;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte1);
     font-size: 16px;
     color: white;
     padding: 10px;
