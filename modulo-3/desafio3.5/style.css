@@ -22,7 +22,7 @@ main h1 {
     font-variant: small-caps;
     color: #da4f4f;
     margin: 3% 0px 3% 0px;
-    font-size: 3.5vw;
+    font-size: 4vw;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 main .imagem {
@@ -37,9 +37,20 @@ main .imagem {
 main p {
     width: fit-content;
     display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 p#hashi {
-    margin-right: 25%;
+    margin-right: 18%;
+    background-color: #da4f4f;
+    color: #fcc9c9;
+}
+p#goku {
+    background-color: #41b7d1;
+    color: #c4e6f8;
 }
 main section#hashi {
     background-image: url('midia/maxresdefault.jpg');
