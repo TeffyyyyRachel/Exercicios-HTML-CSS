@@ -1,2 +1,56 @@
 @charset "UTF-8";
 
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: linear-gradient(to right, #da4f4f, #d3bc79, #41b7d1);
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    margin-top: 15vh;
+    background-color: pink;
+    width: 85vw;
+    padding: 2.3%;
+    border-radius: 15px;
+}
+main h1 {
+    font-variant: small-caps;
+    color: #da4f4f;
+    margin: 3% 0px 3% 0px;
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+main .imagem {
+    width: 44%;
+    height: 250px;
+    display: inline-block;
+    background-color: #d3bc79;
+    border-radius: 15px;
+    border: 3px solid;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+main p {
+    width: fit-content;
+    display: inline-block;
+}
+p#hashi {
+    margin-right: 25%;
+}
+main section#hashi {
+    background-image: url('midia/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-color: #da4f4f;
+    margin-right: 2vw;
+}
+main section#goku {
+    background-image: url('midia/maxresdefault\ 2.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-color: #41b7d1;
+}
