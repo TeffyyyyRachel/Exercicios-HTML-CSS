@@ -16,7 +16,7 @@
 h1 {
     font-family: var(--fonte2);
     font-variant: small-caps;
-    font-size: 80px;
+    font-size: 10vw;
 }
 #titulo {
     text-align: center;
@@ -44,8 +44,11 @@ main{
     font-family: var(--fonte3);
 }
 main section {
-    font-size: 47px;
+    font-size: 4.5vw;
     padding: 10vh 0px 10vh 50px;
+}
+main section.imagem {
+    box-shadow: inset 6px 6px 13px black;
 }
 main p {
     margin: 10vh 0px 10vh 0px;
