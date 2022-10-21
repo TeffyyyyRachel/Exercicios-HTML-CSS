@@ -49,6 +49,9 @@ main section {
 }
 main section.imagem {
     box-shadow: inset 6px 6px 13px black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 main p {
     margin: 10vh 0px 10vh 0px;
@@ -56,8 +59,6 @@ main p {
 main #a2 {
     background-image: url('imagens/background001.jpg');
     color: white;
-    background-size: cover;
-    background-attachment: fixed;
 }
 main #a2 p {
     background-color: black;
@@ -67,8 +68,6 @@ main #a2 p {
 main #a4 {
     background-image: url('imagens/background002.jpg');
     color: white;
-    background-size: cover;
-    background-attachment: fixed;
 }
 main #a4 p {
     background-color: rgba(0, 0, 0, 0.39);
