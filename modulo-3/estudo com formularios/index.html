@@ -190,18 +190,21 @@
         <form action="cadastro.php" method="get">
 
             <p>
-                <label for="in1">Número 1: </label>
-                <input type="number" name="n1" id="in1" min="0" max="10" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                <label for="anoid">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="anoid" min="1924" max="2024" required oninput="isoma.innerHTML = 2024 - Number(anoid.value)">
             </p>
 
             <p>
-                <label for="in2">Número 2: </label>
-                <input type="number" name="n2" id="in2" min="0" max="10" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                Você já fez aniversário?
+                <input type="radio" name="niver" id="niversim" checked> <label for="niversim">Sim</label>
+                <input type="radio" name="niver" id="nivernao" oninput="isoma.innerHTML = 2024 - Number(anoid.value) - 1"> <label for="nivernao">Não</label>
             </p>
 
             <p>
-                <label for="isoma">Soma: </label>
-                <output id="isoma">0</output>
+                <label for="isoma">Sua idade é </label>
+                <b>
+                    <output id="isoma">0</output>
+                </b>
             </p>
 
             <p>
