@@ -196,15 +196,16 @@
 
             <p>
                 Você já fez aniversário?
-                <input type="radio" name="niver" id="niversim" checked> <label for="niversim">Sim</label>
+                <input type="radio" name="niver" id="niversim" checked oninput="isoma.innerHTML = 2024 - Number(anoid.value)"> <label for="niversim">Sim</label>
                 <input type="radio" name="niver" id="nivernao" oninput="isoma.innerHTML = 2024 - Number(anoid.value) - 1"> <label for="nivernao">Não</label>
             </p>
 
             <p>
-                <label for="isoma">Sua idade é </label>
+                <label for="isoma">Sua idade é igual a </label>
                 <b>
                     <output id="isoma">0</output>
                 </b>
+                <label for="isoma"> anos.</label>
             </p>
 
             <p>
