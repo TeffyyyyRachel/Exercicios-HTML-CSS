@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        div.form{
+            padding: 20px;
+            border-top: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Meu primeiro formulário</h1>
+        <form action="cadastro.php" autocomplete="off" method="post">
+            <p><label for="nomeid">Nome: </label>
+                <input type="text" name="nome" id="nomeid">
+            </p>
+            <p><label for="sobrenomeid">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="sobrenomeid">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+
+    <div class="form">
+        <h1>Meu segundo formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <!--post para cadastro com senhas-->
+            <p>
+                <label for="nomeusuid">Nome: </label>
+                <input type="text" name="nomeusu" id="nomeusuid" required minlength="5" placeholder="nome do usuário" autocomplete="username">
+            </p>
+            <p>
+                <label for="senhaid">Senha: </label>
+                <input type="password" name="senha" id="senhaid" required minlength="8" placeholder="mínimo 8 caracteres" autocomplete="current-password">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+
+    <div class="form">
+        <h1>Meu terceiro formulário</h1>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="nomeid">Nome: </label>
+                <input type="text" name="nome" id="nomeid" placeholder="nome do aluno" required>
+            </p>
+            <p>
+                <label for="mediaid">Média: </label>
+                <input type="number" name="media" id="mediaid" min="0" max="10" placeholder="0 a 10" step=".5" required>
+            </p>
+            <p>
+                <label for="periodoid">Período letivo: </label>
+                <input type="month" name="periodo" id="periodoid">
+            </p>
+            <p>
+                <label for="diaprovaid">Dia da prova: </label>
+                <input type="date" name="diaprova" id="diaprovaid">
+            </p>
+            <p>
+                <label for="horaprovaid">Hora da prova: </label>
+                <input type="time" name="horaprova" id="horaprovaid">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+
+    <div class="form">
+        <h1>Meu quarto formulário</h1>
+        <form action="cadastro.php" method="post">
+            
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="emailid">Email: </label>
+                    <input type="email" name="email" id="emailid" autocomplete="email" required placeholder="digite um e-mail válido">
+                </p>
+                <p>
+                    <label for="telid">Telefone: </label>
+                    <input type="tel" name="tel" id="telid" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}$" required placeholder="(DDD) XXXXX-XXXX">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+    </div>
+
+    <div class="form">
+        <h1>Meu quinto formulário</h1>
+        <form action="cadastro.php" method="post">
+            <!-- POST é essencial para o uso do input:file -->
+
+            <fieldset style="width: 40%; display: inline-block;">
+                <Legend>Esportes</Legend>
+                <input type="checkbox" name="esbas" id="esbasid"> <label for="esbasid">Basquete</label>
+                <input type="checkbox" name="esfut" id="esfutid"> <label for="esfutid">Futebol</label>
+                <input type="checkbox" name="esnat" id="esnatid"> <label for="esnatid">Natação</label>
+            </fieldset>
+
+            <fieldset style="width: 40%; display: inline-block;">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masid" checked> <label for="masid">Masculino</label>
+                <input type="radio" name="sexo" id="femid"> <label for="femid">Feminino</label>
+            </fieldset>
+
+            <br>
+
+            <p style="display: inline-block; margin-top: 20px; border-left: 2px solid gray; padding-left: 5px;">
+                <label for="corid">Cor: </label>
+                <input type="color" name="cor" id="corid">
+            </p>
+
+            <p style="display: inline-block; margin-top: 20px; border-left: 2px solid gray; padding-left: 5px;">
+                <label for="nivelid">Nivel de satisfação: </label>
+                <input type="range" name="nivel" id="nivelid" min="1" max="5">
+            </p>
+
+            <p style="display: inline-block; margin-top: 20px; border-left: 2px solid gray; padding-left: 5px;">
+                <label for="fotoid">Foto de perfil: </label>
+                <input type="file" name="foto" id="fotoid">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+
+        </form>
+    </div>
+
+    <div class="form">
+        <h1>Meu sexto formulário</h1>
+        <form action="cadastro.php" method="post">
+            <!--POST também é essencial para textareas-->
+
+            <p>
+                <label for="estadoid">Estado: </label>
+                <select name="estado" id="estadoid">
+                    <option value="" selected>--- ESCOLHA ---</option>
+                    <optgroup label="grupo 1">
+                        <option value="SP">São Paulo</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                    </optgroup>
+
+                    <optgroup label="grupo 2">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MT">Mato-Grosso</option>
+                        <option value="CE">Ceará</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="profid">Profissão: </label>
+                <input type="text" name="prof" id="profid" list="listprof">
+                <datalist id="listprof">
+                    <option>Bombeiro</option>
+                    <option>Policial</option>
+                    <option>Açougueiro</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="mensid" style="display: block;">Mensagem: </label>
+                <textarea name="mens" id="mensid" cols="30" rows="10" placeholder="Escreva uma mensagem"></textarea>
+            </p>
+
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
