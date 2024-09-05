@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(209, 197, 181);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 30px;
+}
+
+.header {
+    background-color: rgb(177, 167, 155);
+    flex: 0 0 200px;
+}
+
+#icones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icones {
+    background-color: rgb(131, 123, 113);
+    flex: 0 0 50px;
+    border-radius: 8px;
+}
