@@ -82,17 +82,37 @@ main {
 }
 
 #main-outros > div{
-    background-color: rgb(105, 105, 105);
+    /* background-color: rgb(105, 105, 105); */
     width: 24%;
 }
 
 #artwork {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .artwork-section {
-    background-color: burlywood;
-    height: 250px;
-    line-height: 83px;
+    background-color: rgb(105, 105, 105);
+    height: 80px;
+    line-height: 80px;
+}
+
+#artwork-section-imagens {
+    height: 125px;
+    line-height: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.artwork-section-imagens {
+    height: 125px;
+    line-height: 125px;
+    width: 48%;
+    background-color: rgb(94, 94, 94);
+}
+
+#artwork-section-artwork, #artwork-section-viewmore {
+    height: 55px;
+    line-height: 55px;
 }
