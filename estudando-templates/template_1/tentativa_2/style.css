@@ -17,9 +17,9 @@ header {
 }
 
 .header {
-    background-color: rgb(196, 179, 168);
+    background-color: rgb(177, 167, 155);
     flex: 0 0 200px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
 }
 
 #icones {
