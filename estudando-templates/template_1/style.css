@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+    color: gray;
+    height: 55px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-div {
+    /* background-color: rgb(105, 105, 105); */
+    color: rgb(105, 105, 105);
+    height: 80%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-div > div {
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+#icones {
+    justify-content: flex-start;
+}
+
+.icones {
+    background-color: rgb(105, 105, 105);
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+}
+
+.menu {
+    margin: 30px;
+}
+
+#botoes {
+    justify-content: space-around;
+}
+
+.botoes {
+    background-color: rgb(105, 105, 105);
+    width: 150px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    background-color: gray;
+    margin: 10px 0;
+    height: 41vh;
+    width: 70vw;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 41vh;
+}
+
+#main-outros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-outros > div{
+    background-color: rgb(105, 105, 105);
+    width: 24%;
+}
+
+#artwork {
+    display: flex;
+    flex-direction: column;
+}
+
+.artwork-section {
+    background-color: burlywood;
+    height: 250px;
+    line-height: 83px;
+}
