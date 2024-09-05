@@ -84,6 +84,12 @@ main {
 #main-outros > div{
     /* background-color: rgb(105, 105, 105); */
     width: 24%;
+    /* border-radius: 20px; */
+}
+
+#main-outros div{
+    /* background-color: rgb(105, 105, 105); */
+    border-radius: 10px;
 }
 
 #artwork {
@@ -115,4 +121,44 @@ main {
 #artwork-section-artwork, #artwork-section-viewmore {
     height: 55px;
     line-height: 55px;
+}
+
+#recent-search {
+    /* height: 40px; */
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#recent-search > div:nth-child(1) {
+    line-height: 25px;
+}
+
+#recent-search > div{
+    background-color: rgb(105, 105, 105);
+}
+
+#imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 120px; */
+    line-height: 120px;
+}
+
+#imagens > div{
+    background-color: rgb(105, 105, 105);
+}
+
+#imagens-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 120px; */
+    line-height: 80px;
+}
+
+#imagens-itens > div{
+    background-color: rgb(105, 105, 105);
 }
