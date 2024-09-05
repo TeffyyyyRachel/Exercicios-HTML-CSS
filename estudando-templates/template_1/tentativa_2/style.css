@@ -6,6 +6,7 @@
 body {
     background-color: rgb(209, 197, 181);
     text-align: center;
+    color: aliceblue;
 }
 
 header {
@@ -76,16 +77,62 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-rows: min-content auto min-content;
     gap: 4px;
+    border-radius: 10px;
 }
 
-.conteudo-item {
+.conteudo-1-item {
     background-color: rgb(94, 88, 81);
+    border-radius: 10px;
 }
 
-#conteudo-item-1 {
+#conteudo-1-item-1 {
     grid-column: 1/3;
 }
 
-#conteudo-item-4 {
+#conteudo-1-item-4 {
     grid-column: 1/3;
+}
+
+#conteudo-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+    border-radius: 10px;
+}
+
+.conteudo-2-item {
+    background-color: rgb(94, 88, 81);
+    flex: 1 1 30px;
+    border-radius: 10px;
+}
+
+#conteudo-2-item-1 {
+    flex: 0 0 20px;
+    width: 80%;
+}
+
+#conteudo-3 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+    border-radius: 10px;
+}
+
+.conteudo-3-item {
+    background-color: rgb(94, 88, 81);
+    flex: 1 0 auto;
+    border-radius: 10px;
+}
+
+#conteudo-4 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+    border-radius: 10px;
+}
+
+.conteudo-4-item {
+    background-color: rgb(94, 88, 81);
+    flex: 1 0 auto;
+    border-radius: 10px;
 }
